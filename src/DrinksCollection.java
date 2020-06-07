@@ -2,18 +2,18 @@ class DrinksCollection {
     public static void main(String[] args) {
         IngredientCharacteristic ingredientCharacteristic = new IngredientCharacteristic();
         IngredientCharacteristic ingredientCharacteristic1 = new IngredientCharacteristic();
-        ingredientCharacteristic1.ingredientName = "czysta wódka";
-        ingredientCharacteristic1.ingredientQuantity = 60;
-        ingredientCharacteristic.ingredientVolume = "ml";
+        ingredientCharacteristic1.Name = "czysta wódka";
+        ingredientCharacteristic1.Quantity = 60;
+        ingredientCharacteristic.Volume = "ml";
 
 
         IngredientCharacteristic ingredientCharacteristic2 = new IngredientCharacteristic();
-        ingredientCharacteristic2.ingredientName = "sok z cytryny";
-        ingredientCharacteristic2.ingredientQuantity = 20;
+        ingredientCharacteristic2.Name = "sok z cytryny";
+        ingredientCharacteristic2.Quantity = 20;
 
         IngredientCharacteristic ingredientCharacteristic3 = new IngredientCharacteristic();
-        ingredientCharacteristic3.ingredientName = "syrop cukrowy";
-        ingredientCharacteristic3.ingredientQuantity = 20;
+        ingredientCharacteristic3.Name = "syrop cukrowy";
+        ingredientCharacteristic3.Quantity = 20;
 
         Drink drink = new Drink();
         drink.name = "Wódka Sour";
@@ -27,10 +27,10 @@ class DrinksCollection {
         drink.ingredient3 = ingredientCharacteristic3;
 
         System.out.println(drink.name + "\t" + drink.price + drink.currency);
-        System.out.println(drink.ingredient1.ingredientName + " " + drink.ingredient1.ingredientQuantity + ingredientCharacteristic.ingredientVolume);
-        System.out.println(drink.ingredient2.ingredientName + " " + drink.ingredient2.ingredientQuantity + ingredientCharacteristic.ingredientVolume);
-        System.out.println(drink.ingredient3.ingredientName + " " + drink.ingredient3.ingredientQuantity + ingredientCharacteristic.ingredientVolume);
-        System.out.println(drink.ingredient1.ingredientQuantity + drink.ingredient3.ingredientQuantity + drink.ingredient3.ingredientQuantity + " " + ingredientCharacteristic.ingredientVolume);
+        System.out.println(drink.ingredient1.Name + " " + drink.ingredient1.Quantity + ingredientCharacteristic.Volume);
+        System.out.println(drink.ingredient2.Name + " " + drink.ingredient2.Quantity + ingredientCharacteristic.Volume);
+        System.out.println(drink.ingredient3.Name + " " + drink.ingredient3.Quantity + ingredientCharacteristic.Volume);
+        System.out.println(drink.ingredient1.Quantity + drink.ingredient3.Quantity + drink.ingredient3.Quantity + " " + ingredientCharacteristic.Volume);
         System.out.println("Czy drink zawiera alkohol?" + " " + drink.alko);
         System.out.println(" ");
         System.out.println(drink.descriptionInfo);
