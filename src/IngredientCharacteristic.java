@@ -1,5 +1,5 @@
 class IngredientCharacteristic {
-    String Name;
-    int Quantity;
-    String Volume;
+    String name;
+    int quantity;
+    String volume;
 }
